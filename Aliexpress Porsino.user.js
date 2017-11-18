@@ -38,11 +38,11 @@ function colorear(){
         var isViaASS = $(this).find("dd.price").text().match(/via AliExpress Standard Shipping/gi);
 
         //comprueba que el numero de tienda este en el arreglo de tiendas conocidas
-        var isPorsino = $.inArray(tienda, TiendasRecomendadas);
+        var isTiendasRecomendadas = $.inArray(tienda, TiendasRecomendadas);
 
         var isBorrada = $.inArray(tienda, tiendasBorradas);
 
-        if(isPorsino !== -1){
+        if(isTiendasRecomendadas !== -1){
 
             //si la tienda es conocida le cambia el color de fondo a verde en la lista de productos
             $(this).css("background-color","#6B8E23");
