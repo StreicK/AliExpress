@@ -8,14 +8,14 @@
 // @require      http://code.jquery.com/jquery-latest.js
 // @grant        none
 // ==/UserScript==
-var jsonPorSino = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasRecomendadas.json";
+var jsonTiendasRecomendadas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasRecomendadas.json";
 var jsonTiendasBorradas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/tiendasBorradas.json";
 
 var TiendasRecomendadas;
 var tiendasBorradas;
 
 //trae el json con el arreglo que contiene los numeros de tiendas
-$.getJSON(jsonPorSino ,function(data){
+$.getJSON(jsonTiendasRecomendadas ,function(data){
     TiendasRecomendadas = data.TiendasRecomendadas;
 });
 
