@@ -1,12 +1,10 @@
 // ==UserScript==
-// @name         Aliexpress Porsino
-// @namespace    chw.orochimaru
-// @version      0.6
-// @description  Script para destacar tiendas que hacen envíos por sinotrans en aliexpress
-// @author       BRC
+// @name         AliExpress por Sinotrans
+// @version      1.0
+// @description  Script para destacar las tiendas que hacen envíos por Sinotrans en AliExpress
+// @author       Original por chw.orochimaru - Actualizado por chw.StreicK
 // @match        *.aliexpress.com/*
 // @require      http://code.jquery.com/jquery-latest.js
-// @grant        none
 // ==/UserScript==
 var jsonTiendasRecomendadas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasRecomendadas.json";
 var jsonTiendasBorradas = "https://raw.githubusercontent.com/brcrepo/Aliexpress-por-sino/master/tiendasBorradas.json";
