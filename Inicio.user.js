@@ -8,15 +8,15 @@
 // @require      http://code.jquery.com/jquery-latest.js
 // @grant        none
 // ==/UserScript==
-var jsonPorSino = "https://raw.githubusercontent.com/brcrepo/Aliexpress-por-sino/master/tiendasPorSino.json";
+var jsonTiendasRecomendadas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasRecomendadas.json";
 var jsonTiendasBorradas = "https://raw.githubusercontent.com/brcrepo/Aliexpress-por-sino/master/tiendasBorradas.json";
 
-var tiendasPorSino;
-var tiendasBorradas;
+var TiendasRecomendadas;
+var tiendasBorradasTiendasNoRecomendadas;
 
 //trae el json con el arreglo que contiene los numeros de tiendas
 $.getJSON(jsonPorSino ,function(data){
-    tiendasPorSino = data.tiendasPorSino;
+    TiendasRecomendadas = data.TiendasRecomendadas;
 });
 
 $.getJSON(jsonTiendasBorradas ,function(data){
@@ -38,7 +38,7 @@ function colorear(){
         var isViaASS = $(this).find("dd.price").text().match(/via AliExpress Standard Shipping/gi);
 
         //comprueba que el numero de tienda este en el arreglo de tiendas conocidas
-        var isPorsino = $.inArray(tienda, tiendasPorSino);
+        var isPorsino = $.inArray(tienda, TiendasRecomendadas);
 
         var isBorrada = $.inArray(tienda, tiendasBorradas);
 
