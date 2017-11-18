@@ -13,11 +13,11 @@ var TiendasRecomendadas;
 var TiendasNoRecomendadas;
 
 //trae el json con el arreglo que contiene los numeros de tiendas
-$.getJSON(jsonPorSino ,function(data){
+$.getJSON(jsonTiendasRecomendadas ,function(data){
     TiendasRecomendadas = data.TiendasRecomendadas;
 });
 
-$.getJSON(jsonTiendasBorradas ,function(data){
+$.getJSON(jsonTiendasNoRecomendadas ,function(data){
     TiendasNoRecomendadas = data.TiendasNoRecomendadas;
 });
 
