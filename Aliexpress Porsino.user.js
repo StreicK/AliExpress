@@ -8,8 +8,8 @@
 // @require      http://code.jquery.com/jquery-latest.js
 // @grant        none
 // ==/UserScript==
-var jsonPorSino = "https://raw.githubusercontent.com/brcrepo/Aliexpress-por-sino/master/tiendasPorSino.json";
-var jsonTiendasBorradas = "https://raw.githubusercontent.com/brcrepo/Aliexpress-por-sino/master/tiendasBorradas.json";
+var jsonPorSino = "https://raw.githubusercontent.com/StreicK/AliExpress/master/tiendasPorSino.json";
+var jsonTiendasBorradas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/tiendasBorradas.json";
 
 var tiendasPorSino;
 var tiendasBorradas;
