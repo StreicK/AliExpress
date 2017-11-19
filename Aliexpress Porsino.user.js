@@ -1,9 +1,8 @@
 // ==UserScript==
-// @name         Aliexpress Porsino
-// @namespace    chw.orochimaru
-// @version      0.6
-// @description  Script para destacar tiendas que hacen envíos por sinotrans en aliexpress
-// @author       BRC
+// @name         Tiendas Sinotrans
+// @version      1.0
+// @description  Conoce las tiendas que envían por Sinotrans
+// @author       Original CHW.orochimaru - Modificado CHW.StreicK
 // @match        *.aliexpress.com/*
 // @require      http://code.jquery.com/jquery-latest.js
 // @grant        none
