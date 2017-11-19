@@ -9,18 +9,18 @@
 // @grant        none
 // ==/UserScript==
 var jsonPorSino = "https://raw.githubusercontent.com/StreicK/AliExpress/master/tiendasPorSino.json";
-var jsonTiendasBorradas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/tiendasBorradas.json";
+var jsonTiendasNoRecomendadas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasNoRecomendadas.json";
 
 var tiendasPorSino;
-var tiendasBorradas;
+var TiendasNoRecomendadas;
 
 //trae el json con el arreglo que contiene los numeros de tiendas
 $.getJSON(jsonPorSino ,function(data){
     tiendasPorSino = data.tiendasPorSino;
 });
 
-$.getJSON(jsonTiendasBorradas ,function(data){
-    tiendasBorradas = data.tiendasBorradas;
+$.getJSON(jsonTiendasNoRecomendadas ,function(data){
+    TiendasNoRecomendadas = data.TiendasNoRecomendadas;
 });
 
 function colorear(){
@@ -40,7 +40,7 @@ function colorear(){
         //comprueba que el numero de tienda este en el arreglo de tiendas conocidas
         var isPorsino = $.inArray(tienda, tiendasPorSino);
 
-        var isBorrada = $.inArray(tienda, tiendasBorradas);
+        var isBorrada = $.inArray(tienda, TiendasNoRecomendadas);
 
         if(isPorsino !== -1){
 
