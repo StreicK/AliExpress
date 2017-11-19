@@ -63,7 +63,7 @@ function colorear(){
         }else if(isViaASS){
 
             //si la tienda muestra envio por AliExpress Standard Shipping le cambia el color de fondo a amarillo en la lista de productos
-            $(this).css("background-color","#ffe700");
+            $(this).css("background-color","#b40cb7");
 
         }
 
