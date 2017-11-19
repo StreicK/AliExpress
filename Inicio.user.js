@@ -50,14 +50,14 @@ function colorear(){
         }else if(isTiendaNoRecomendada!== -1){
 
             //COLOR DE LAS TIENDAS NO RECOMENDADAS
-            $(this).css({'background': '#60b807',
-                         'background':'-moz-linear-gradient(-45deg, #60b807 0%, #ff0808 50%)',
-                         'background':' -webkit-gradient(left top, right bottom, color-stop(0%, #60b807), color-stop(50%, #ff0808))',
-                         'background':' -webkit-linear-gradient(-45deg, #60b807 0%, #ff0808 50%)',
-                         'background':' -o-linear-gradient(-45deg, #60b807 0%, #ff0808 50%)',
-                         'background':' -ms-linear-gradient(-45deg, #60b807 0%, #ff0808 50%)',
-                         'background':' linear-gradient(135deg, #60b807 0%, #ff0808 50%)'});
-
+            $(this).css({'background': '#448904',
+                         'background:'-moz-linear-gradient(-45deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
+                         'background:' -webkit-gradient(left top, right bottom, color-stop(0%, #448904), color-stop(30%, #448904), color-stop(70%, #ffe600), color-stop(100%, #ffe600))',
+                         'background:' -webkit-linear-gradient(-45deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
+                         'background:' -o-linear-gradient(-45deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
+                         'background:' -ms-linear-gradient(-45deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
+                         'background: linear-gradient(135deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
+                         'filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#448904', endColorstr='#ffe600', GradientType=1 )'});
 
 
         }else if(isViaASS){
