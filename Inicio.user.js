@@ -9,13 +9,11 @@
 // ==/UserScript==
 var jsonTiendasRecomendadas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasRecomendadas.json";
 var jsonTiendasNoRecomendadas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasNoRecomendadas.json";
-var jsonTiendasPosibles = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasPosibles.json";
 
 var TiendasRecomendadas;
 var TiendasNoRecomendadas;
-var TiendasPosibles;
 
-//TRAE LOS JSON QUE CONTIENEN LAS TIENDAS
+//trae el json con el arreglo que contiene los numeros de tiendas
 $.getJSON(jsonTiendasRecomendadas ,function(data){
     TiendasRecomendadas = data.TiendasRecomendadas;
 });
@@ -24,18 +22,14 @@ $.getJSON(jsonTiendasNoRecomendadas ,function(data){
     TiendasNoRecomendadas = data.TiendasNoRecomendadas;
 });
 
-$.getJSON(jsonTiendasPosibles ,function(data){
-    TiendasPosibles = data.TiendasPosibles;
-});
-
 function colorear(){
 
-    //LISTADO DE LAS TIENDAS QUE SE MUESTRAN EN LA BUSQUEDA
+    //listado de las tiendas que se muestran en la busqueda
     var listaDeProductos = $('li.list-item');
 
     $(listaDeProductos).each(function(){
 
-        //EXTRAE EL NUMERO DE LA TIENDA
+        //extrae el numero de tienda
         var tienda = $(this).find("a.store ").attr("href").split('/').pop();
         //console.log(tienda);
 
@@ -45,16 +39,14 @@ function colorear(){
         //comprueba que el numero de tienda este en el arreglo de tiendas conocidas
         var isTiendasRecomendadas = $.inArray(tienda, TiendasRecomendadas);
 
-        var isTiendaNoRecomendadas = $.inArray(tienda, TiendasNoRecomendadas);
-        
-        var isTiendasPosibles = $.inArray(tienda, TiendasPosibles);
+        var isTiendaNoRecomendada = $.inArray(tienda, TiendasNoRecomendadas);
 
         if(isTiendasRecomendadas !== -1){
 
             //COLOR DE LAS TIENDAS RECOMENDADAS
             $(this).css("background-color","#448904");
 
-        }else if(isTiendasNoRecomendadas!== -1){
+        }else if(isTiendaNoRecomendada!== -1){
 
             //COLOR DE LAS TIENDAS NO RECOMENDADAS
             $(this).css({'background': '#60b807',
@@ -64,11 +56,6 @@ function colorear(){
                          'background':' -o-linear-gradient(-45deg, #60b807 0%, #ff0808 50%)',
                          'background':' -ms-linear-gradient(-45deg, #60b807 0%, #ff0808 50%)',
                          'background':' linear-gradient(135deg, #60b807 0%, #ff0808 50%)'});
-
-            }else if(isTiendasPosibles!== -1){
- 
-            //COLOR DE LAS TIENDAS POSIBLES
-            $(this).css("background-color","#7a0dad");
 
 
 
