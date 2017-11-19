@@ -2,10 +2,10 @@
 Conoce las tiendas que envían por Sinotrans
 
 
-# Instalación 
-1- Instalar extensión para poder usar el script : http://tampermonkey.net
+# Cómo usar
+1. Instalar extensión TAMPERMONKEY para poder usar el script desde el siguiente enlace: http://tampermonkey.net
 
-2- Instalar/actualizar el script : https://github.com/StreicK/AliExpress/raw/master/Inicio.user.js
+2. Instalar o actualizar el script: https://github.com/StreicK/AliExpress/raw/master/Inicio.user.js
 
 
 # Leyenda 
