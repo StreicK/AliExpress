@@ -40,14 +40,14 @@ function colorear(){
         //comprueba que el numero de tienda este en el arreglo de tiendas conocidas
         var isPorsino = $.inArray(tienda, tiendasPorSino);
 
-        var isBorrada = $.inArray(tienda, TiendasNoRecomendadas);
+        var isTiendaNoRecomendada = $.inArray(tienda, TiendasNoRecomendadas);
 
         if(isPorsino !== -1){
 
             //si la tienda es conocida le cambia el color de fondo a verde en la lista de productos
-            $(this).css("background-color","#6B8E23");
+            $(this).css("background-color","#078e36");
 
-        }else if(isBorrada!== -1){
+        }else if(isTiendaNoRecomendada!== -1){
 
             //tiendas que envian por sino a veces si y a veces no
             $(this).css({'background': '#60b807',
