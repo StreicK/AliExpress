@@ -45,7 +45,7 @@ function colorear(){
         if(isPorsino !== -1){
 
             //si la tienda es conocida le cambia el color de fondo a verde en la lista de productos
-            $(this).css("background-color","#078e36");
+            $(this).css("background-color","#0cb748");
 
         }else if(isTiendaNoRecomendada!== -1){
 
