@@ -2,7 +2,7 @@
 // @name         Tiendas Sinotrans
 // @version      1.0
 // @description  Conoce las tiendas que envían por Sinotrans
-// @author       Original CHW.orochimaru - Modificado CHW.StreicK
+// @author       Original por CHW.orochimaru - Modificado por CHW.StreicK
 // @match        *.aliexpress.com/*
 // @require      http://code.jquery.com/jquery-latest.js
 // @grant        none
