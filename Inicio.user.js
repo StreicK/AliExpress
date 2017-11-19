@@ -45,10 +45,11 @@ function colorear(){
 
         //COMPRUEBA QUE EL NUMERO DE TIENDA ESTE EN LOS REGISTROS
         var isTiendasRecomendadas = $.inArray(tienda, TiendasRecomendadas);
+       
+        var isTiendasPosibles = $.inArray(tienda, TiendasPosibles);
 
         var isTiendasNoRecomendadas = $.inArray(tienda, TiendasNoRecomendadas);
         
-        var isTiendasPosibles = $.inArray(tienda, TiendasPosibles);
 
         if(isTiendasRecomendadas !== -1){
 
@@ -56,11 +57,6 @@ function colorear(){
             $(this).css("background-color","#448904");
             
             
-        }else if(isTiendasNoRecomendadas!== -1){
-
-            //COLOR DE LAS TIENDAS NO RECOMENDADAS
-            $(this).css("background-color","#d800ff");
-
         }else if(isTiendasPosibles!== -1){
 
             //COLOR DE LAS TIENDAS POSIBLES
@@ -71,9 +67,14 @@ function colorear(){
                          'background':' -o-linear-gradient(-45deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
                          'background':' -ms-linear-gradient(-45deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
                          'background':' linear-gradient(135deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)'});
+            
+        }else if(isTiendasNoRecomendadas!== -1){
+
+            //COLOR DE LAS TIENDAS NO RECOMENDADAS
+            $(this).css("background-color","#d800ff");
+
+       
                       
-
-
         }else if(isViaASS){
 
             //COLOR DE LAS TIENDAS QUE ENVÍAN POR ALIEXPRESS STANDARD SHIPPING (SIN COMPROBAR)
