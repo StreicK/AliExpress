@@ -21,12 +21,12 @@ $.getJSON(jsonTiendasRecomendadas ,function(data){
     TiendasRecomendadas = data.TiendasRecomendadas;
 });
 
-$.getJSON(jsonTiendasNoRecomendadas ,function(data){
-    TiendasNoRecomendadas = data.TiendasNoRecomendadas;
-});
-
 $.getJSON(jsonTiendasPosibles ,function(data){
     TiendasPosibles = data.TiendasPosibles;
+});
+
+$.getJSON(jsonTiendasNoRecomendadas ,function(data){
+    TiendasNoRecomendadas = data.TiendasNoRecomendadas;
 });
 
 function colorear(){
@@ -56,7 +56,7 @@ function colorear(){
             $(this).css("background-color","#448904");
             
             
-        if(isTiendasNoRecomendadas !== -1){
+        }else if(isTiendasNoRecomendadas!== -1){
 
             //COLOR DE LAS TIENDAS NO RECOMENDADAS
             $(this).css("background-color","#d800ff");
