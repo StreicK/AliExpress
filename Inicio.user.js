@@ -9,11 +9,13 @@
 // ==/UserScript==
 var jsonTiendasRecomendadas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasRecomendadas.json";
 var jsonTiendasNoRecomendadas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasNoRecomendadas.json";
+var jsonTiendasPosibles = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasPosibles.json";
 
 var TiendasRecomendadas;
 var TiendasNoRecomendadas;
+var TiendasPosibles;
 
-//trae el json con el arreglo que contiene los numeros de tiendas
+//TRAE LOS JSON QUE CONTIENEN LAS TIENDAS
 $.getJSON(jsonTiendasRecomendadas ,function(data){
     TiendasRecomendadas = data.TiendasRecomendadas;
 });
@@ -22,14 +24,18 @@ $.getJSON(jsonTiendasNoRecomendadas ,function(data){
     TiendasNoRecomendadas = data.TiendasNoRecomendadas;
 });
 
+$.getJSON(jsonTiendasPosibles ,function(data){
+    TiendasPosibles = data.TiendasPosibles;
+});
+
 function colorear(){
 
-    //listado de las tiendas que se muestran en la busqueda
+    //LISTADO DE LAS TIENDAS QUE SE MUESTRAN EN LA BUSQUEDA
     var listaDeProductos = $('li.list-item');
 
     $(listaDeProductos).each(function(){
 
-        //extrae el numero de tienda
+        //EXTRAE EL NUMERO DE LA TIENDA
         var tienda = $(this).find("a.store ").attr("href").split('/').pop();
         //console.log(tienda);
 
@@ -39,14 +45,16 @@ function colorear(){
         //comprueba que el numero de tienda este en el arreglo de tiendas conocidas
         var isTiendasRecomendadas = $.inArray(tienda, TiendasRecomendadas);
 
-        var isTiendaNoRecomendada = $.inArray(tienda, TiendasNoRecomendadas);
+        var isTiendaNoRecomendadas = $.inArray(tienda, TiendasNoRecomendadas);
+        
+        var isTiendasPosibles = $.inArray(tienda, TiendasPosibles);
 
         if(isTiendasRecomendadas !== -1){
 
             //COLOR DE LAS TIENDAS RECOMENDADAS
             $(this).css("background-color","#448904");
 
-        }else if(isTiendaNoRecomendada!== -1){
+        }else if(isTiendaNoRecomendadas!== -1){
 
             //COLOR DE LAS TIENDAS NO RECOMENDADAS
             $(this).css({'background': '#60b807',
