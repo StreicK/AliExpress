@@ -71,7 +71,7 @@ function colorear(){
         }else if(isTiendasNoRecomendadas!== -1){
 
             //COLOR DE LAS TIENDAS NO RECOMENDADAS
-            $(this).css("background-color","#d800ff");
+            $(this).css("background-color","#b51b0a");
 
        
                       
