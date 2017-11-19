@@ -50,7 +50,7 @@ function colorear(){
         }else if(isBorrada!== -1){
 
             //tiendas que envian por sino a veces si y a veces no
-            $(this).css({'background': '#60b807',
+            $(this).css({'background': '#b82706',
                          'background':'-moz-linear-gradient(-45deg, #60b807 0%, #efff08 50%)',
                          'background':' -webkit-gradient(left top, right bottom, color-stop(0%, #60b807), color-stop(50%, #efff08))',
                          'background':' -webkit-linear-gradient(-45deg, #60b807 0%, #efff08 50%)',
