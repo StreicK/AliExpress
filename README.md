@@ -9,13 +9,13 @@ Conoce las tiendas que envían por Sinotrans
 
 
 # Leyenda 
-![tienda verde](http://imgur.com/TFRSUYZ.png) : tiendas comprobadas por usuarios del foro o en la lista auspiciada por correos chile 
+![tienda verde](https://imgur.com/eSqqzoe) : tiendas comprobadas por usuarios del foro o en la lista auspiciada por correos chile 
 
-![tienda degrade](http://imgur.com/L2Y4XRg.png) : tiendas inconsistentes (a veces envian por sinotrans y a veces no)
+![tienda degrade](https://imgur.com/kKOIygi) : tiendas inconsistentes (a veces envian por sinotrans y a veces no)
 
+![tienda amarilla](https://imgur.com/H1yuxRs) : tiendas que envian por sinotrans, pero no estan comprobadas por usuarios del foro
 
-![tienda amarilla](http://imgur.com/jbCiIf1.png) : tiendas que envian por sinotrans, pero no estan comprobadas por usuarios del foro
-
+![tienda roja](https://imgur.com/rNgp3Y2) : tiendas que no envian por sinotrans
 
 # Alerta de pocos dias 
 
