@@ -60,13 +60,15 @@ function colorear(){
         }else if(isTiendasPosibles!== -1){
 
             //COLOR DE LAS TIENDAS POSIBLES
-            $(this).css({'background': '#448904',
-                         'background':'-moz-linear-gradient(-45deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
-                         'background':' -webkit-gradient(left top, right bottom, color-stop(0%, #448904), color-stop(30%, #448904), color-stop(70%, #ffe600), color-stop(100%, #ffe600))',
-                         'background':' -webkit-linear-gradient(-45deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
-                         'background':' -o-linear-gradient(-45deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
-                         'background':' -ms-linear-gradient(-45deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
-                         'background':' linear-gradient(135deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)'});
+            $(this).css({'background': '#318b04',
+                         'background': '-moz-linear-gradient(45deg, #318b04 0%, #318b04 30%, #b33409 70%, #b33409 100%)',
+                         'background': ' -webkit-gradient(left bottom, right top, color-stop(0%, #318b04), color-stop(30%, #318b04), color-stop(70%, #b33409), color-stop(100%, #b33409))',
+                         'background': ' -webkit-linear-gradient(45deg, #318b04 0%, #318b04 30%, #b33409 70%, #b33409 100%)',
+                         'background': ' -o-linear-gradient(45deg, #318b04 0%, #318b04 30%, #b33409 70%, #b33409 100%)',
+                         'background': ' -ms-linear-gradient(45deg, #318b04 0%, #318b04 30%, #b33409 70%, #b33409 100%)',
+                         'background': ' linear-gradient(45deg, #318b04 0%, #318b04 30%, #b33409 70%, #b33409 100%)'});
+            
+            
             
         }else if(isTiendasNoRecomendadas!== -1){
 
