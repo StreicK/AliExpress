@@ -1,9 +1,9 @@
-# Aliexpress-por-sino 
-Userscript para destacar tiendas que hacen envíos por sinotrans en aliexpress
+# Tiendas Sinotrans
+Conoce las tiendas que envían por Sinotrans
 
 
 # Instalación 
-1- Instalar extensión para poder usar user scripts : http://tampermonkey.net
+1- Instalar extensión para poder usar el script : http://tampermonkey.net
 
 2- Instalar/actualizar el script : https://github.com/StreicK/AliExpress/raw/master/Inicio.user.js
 
@@ -25,7 +25,7 @@ Se cambia el tamaño y el color del texto cuando quedan menos de 7 días en la o
 
 
 
-# Boton correos Chile
+# Boton Correos de Chile
 
 ![boton](http://i.imgur.com/HDas0aS.jpg)
 
