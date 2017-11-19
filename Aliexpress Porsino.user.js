@@ -44,12 +44,12 @@ function colorear(){
 
         if(isPorsino !== -1){
 
-            //si la tienda es conocida le cambia el color de fondo a verde en la lista de productos
+            //COLOR DE LAS TIENDAS RECOMENDADAS
             $(this).css("background-color","#59b70c");
 
         }else if(isTiendaNoRecomendada!== -1){
 
-            //tiendas que envian por sino a veces si y a veces no
+            //COLOR DE LAS TIENDAS NO RECOMENDADAS
             $(this).css({'background': '#60b807',
                          'background':'-moz-linear-gradient(-45deg, #60b807 0%, #ff0808 50%)',
                          'background':' -webkit-gradient(left top, right bottom, color-stop(0%, #60b807), color-stop(50%, #ff0808))',
@@ -62,7 +62,7 @@ function colorear(){
 
         }else if(isViaASS){
 
-            //si la tienda muestra envio por AliExpress Standard Shipping le cambia el color de fondo a amarillo en la lista de productos
+            //COLOR DE LAS TIENDAS QUE ENVÍAN POR ALIEXPRESS STANDARD SHIPPING (SIN COMPROBAR)
             $(this).css("background-color","#b40cb7");
 
         }
