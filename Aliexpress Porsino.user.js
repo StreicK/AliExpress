@@ -45,7 +45,7 @@ function colorear(){
         if(isPorsino !== -1){
 
             //COLOR DE LAS TIENDAS RECOMENDADAS
-            $(this).css("background-color","#59b70c");
+            $(this).css("background-color","#448904");
 
         }else if(isTiendaNoRecomendada!== -1){
 
@@ -63,7 +63,7 @@ function colorear(){
         }else if(isViaASS){
 
             //COLOR DE LAS TIENDAS QUE ENVÍAN POR ALIEXPRESS STANDARD SHIPPING (SIN COMPROBAR)
-            $(this).css("background-color","#b40cb7");
+            $(this).css("background-color","#ffe700");
 
         }
 
