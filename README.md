@@ -9,13 +9,13 @@ Conoce las tiendas que envían por Sinotrans
 
 
 # Leyenda 
-![tienda verde](https://imgur.com/eSqqzoe) : Tiendas que envían por Sinotrans
+![tienda verde](https://i.imgur.com/eSqqzoe.jpg) : Tiendas que envían por Sinotrans
 
-![tienda degrade](https://imgur.com/kKOIygi) : Tiendas que a veces envían por Sinotrans
+![tienda degrade](https://i.imgur.com/kKOIygi.jpg) : Tiendas que a veces envían por Sinotrans
 
-![tienda amarilla](https://imgur.com/H1yuxRs) : Tiendas que no han sido comprobados pero envían por AliExpress Standard Shipping
+![tienda amarilla](https://i.imgur.com/H1yuxRs.jpg) : Tiendas que no han sido comprobados pero envían por AliExpress Standard Shipping
 
-![tienda roja](https://imgur.com/rNgp3Y2) : Tiendas que no envían por Sinotrans
+![tienda roja](https://i.imgur.com/rNgp3Y2.jpg) : Tiendas que no envían por Sinotrans
 
 # Alerta de pocos dias 
 
