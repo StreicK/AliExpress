@@ -10,13 +10,19 @@
 // ==/UserScript==
 var jsonTiendasRecomendadas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasRecomendadas.json";
 var jsonTiendasPosibles = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasPosibles.json";
+var jsonTiendasNoRecomendadas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasNoRecomendadas.json";
 
 var TiendasRecomendadas;
 var TiendasPosibles;
+var TiendasNoRecomendadas;
 
 //trae el json con el arreglo que contiene los numeros de tiendas
 $.getJSON(jsonTiendasRecomendadas ,function(data){
     TiendasRecomendadas = data.TiendasRecomendadas;
+});
+
+$.getJSON(jsonTiendasNoRecomendadas ,function(data){
+    TiendasNoRecomendadas = data.TiendasNoRecomendadas;
 });
 
 $.getJSON(jsonTiendasPosibles ,function(data){
@@ -40,6 +46,8 @@ function colorear(){
         //COMPRUEBA QUE EL NUMERO DE TIENDA ESTE EN LOS REGISTROS
         var isTiendasRecomendadas = $.inArray(tienda, TiendasRecomendadas);
 
+        var isTiendasNoRecomendadas = $.inArray(tienda, TiendasNoRecomendadas);
+        
         var isTiendasPosibles = $.inArray(tienda, TiendasPosibles);
 
         if(isTiendasRecomendadas !== -1){
