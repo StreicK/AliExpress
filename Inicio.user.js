@@ -54,6 +54,12 @@ function colorear(){
 
             //COLOR DE LAS TIENDAS RECOMENDADAS
             $(this).css("background-color","#448904");
+            
+            
+        if(isTiendasNoRecomendadas !== -1){
+
+            //COLOR DE LAS TIENDAS NO RECOMENDADAS
+            $(this).css("background-color","#d800ff");
 
         }else if(isTiendasPosibles!== -1){
 
