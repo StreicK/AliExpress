@@ -54,7 +54,7 @@ function colorear(){
             //COLOR DE LAS TIENDAS RECOMENDADAS
             $(this).css("background-color","#448904");
 
-        }else if(isTiendaNoRecomendadas!== -1){
+        }else if(isTiendasNoRecomendadas!== -1){
 
             //COLOR DE LAS TIENDAS NO RECOMENDADAS
             $(this).css({'background': '#60b807',
@@ -65,10 +65,8 @@ function colorear(){
                          'background':' -ms-linear-gradient(-45deg, #60b807 0%, #ff0808 50%)',
                          'background':' linear-gradient(135deg, #60b807 0%, #ff0808 50%)'});
 
-            if(isTiendasPosibles !== -1){
-
-                
-                
+            }else if(isTiendasPosibles!== -1){
+ 
             //COLOR DE LAS TIENDAS POSIBLES
             $(this).css("background-color","#7a0dad");
 
