@@ -7,15 +7,15 @@
 // @require      http://code.jquery.com/jquery-latest.js
 // @grant        none
 // ==/UserScript==
-var jsonPorSino = "https://raw.githubusercontent.com/StreicK/AliExpress/master/tiendasPorSino.json";
+var jsonTiendasRecomendadas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasRecomendadas.json";
 var jsonTiendasNoRecomendadas = "https://raw.githubusercontent.com/StreicK/AliExpress/master/TiendasNoRecomendadas.json";
 
-var tiendasPorSino;
+var TiendasRecomendadas;
 var TiendasNoRecomendadas;
 
 //trae el json con el arreglo que contiene los numeros de tiendas
-$.getJSON(jsonPorSino ,function(data){
-    tiendasPorSino = data.tiendasPorSino;
+$.getJSON(jsonTiendasRecomendadas ,function(data){
+    TiendasRecomendadas = data.TiendasRecomendadas;
 });
 
 $.getJSON(jsonTiendasNoRecomendadas ,function(data){
@@ -37,11 +37,11 @@ function colorear(){
         var isViaASS = $(this).find("dd.price").text().match(/via AliExpress Standard Shipping/gi);
 
         //comprueba que el numero de tienda este en el arreglo de tiendas conocidas
-        var isPorsino = $.inArray(tienda, tiendasPorSino);
+        var isTiendasRecomendadas = $.inArray(tienda, TiendasRecomendadas);
 
         var isTiendaNoRecomendada = $.inArray(tienda, TiendasNoRecomendadas);
 
-        if(isPorsino !== -1){
+        if(isTiendasRecomendadas !== -1){
 
             //COLOR DE LAS TIENDAS RECOMENDADAS
             $(this).css("background-color","#448904");
