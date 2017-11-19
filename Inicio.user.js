@@ -56,8 +56,8 @@ function colorear(){
                          'background:' -webkit-linear-gradient(-45deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
                          'background:' -o-linear-gradient(-45deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
                          'background:' -ms-linear-gradient(-45deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
-                         'background: linear-gradient(135deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)',
-                         'filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#448904', endColorstr='#ffe600', GradientType=1 )'});
+                         'background: linear-gradient(135deg, #448904 0%, #448904 30%, #ffe600 70%, #ffe600 100%)'});
+                      
 
 
         }else if(isViaASS){
