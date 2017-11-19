@@ -17,16 +17,10 @@ Conoce las tiendas que envían por Sinotrans
 
 ![tienda roja](https://i.imgur.com/rNgp3Y2.jpg) : Tiendas que no envían por Sinotrans
 
-# Alerta de pocos dias 
 
-![alerta](http://i.imgur.com/lKQFtQH.jpg)  
+# Script Original
 
-Se cambia el tamaño y el color del texto cuando quedan menos de 7 días en la orden     
-
+https://github.com/brcrepo/Aliexpress-por-sino
 
 
-# Boton Correos de Chile
 
-![boton](http://i.imgur.com/HDas0aS.jpg)
-
-Botón para ver el envío en correos Chile
